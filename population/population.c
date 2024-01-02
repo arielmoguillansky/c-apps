@@ -1,9 +1,13 @@
+// Import C libraries
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
     int start_size;
+
+    // Valid input should be gt 9
+    // Keep asking until valid input
     do
     {
         start_size = get_int("Enter start size: ");
@@ -11,6 +15,8 @@ int main(void)
     while (start_size < 9);
 
     int end_size;
+    // Valid input should be lt first value
+    // Keep asking until valid input
     do
     {
         end_size = get_int("Enter end size: ");
