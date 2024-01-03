@@ -6,3 +6,5 @@ A series of console apps made in C to learn the language and basic concepts of h
 2. Population calculator
 3. Credit cards validator
 4. Change calculator
+5. Words to emoji
+6. Encryption program
