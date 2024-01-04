@@ -6,14 +6,12 @@
 int main(void)
 {
     int n;
-    char size[1];
     // Valid input should be a number between 1 and 8
     // Keep asking for input until valid value is inserted
     do
     {
         printf("Block size: ");
-        fscanf (stdin, "%s", size);
-        n = atoi(size);
+        scanf ("%d", &n);
     }
     while (n < 1 || n > 8);
 
@@ -39,6 +37,6 @@ int main(void)
         }
         printf("\n");
     }
-    
+
     return 0;
 }

@@ -1,5 +1,4 @@
 // Import C libraries
-#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
@@ -10,7 +9,8 @@ int main(void)
     // Keep asking until valid input
     do
     {
-        start_size = get_int("Enter start size: ");
+        printf("Enter start size: ");
+        scanf("%d", start_size);
     }
     while (start_size < 9);
 
@@ -19,7 +19,8 @@ int main(void)
     // Keep asking until valid input
     do
     {
-        end_size = get_int("Enter end size: ");
+        printf("Enter end size: ");
+        scanf("%d", end_size);
     }
     while (end_size < start_size);
 
