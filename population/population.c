@@ -10,7 +10,7 @@ int main(void)
     do
     {
         printf("Enter start size: ");
-        scanf("%d", start_size);
+        scanf("%d", &start_size);
     }
     while (start_size < 9);
 
@@ -20,7 +20,7 @@ int main(void)
     do
     {
         printf("Enter end size: ");
-        scanf("%d", end_size);
+        scanf("%d", &end_size);
     }
     while (end_size < start_size);
 
