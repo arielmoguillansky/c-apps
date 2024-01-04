@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -10,7 +9,9 @@ char *convert_to_binary(int decimal);
 
 int main(void)
 {
-    string msg = get_string("Message: ");
+    char msg[50];
+    printf("Word [max 50 chars]: ");
+    scanf("%s", msg);
 
     for (int j = 0, len = strlen(msg); j < len; j++)
     {
@@ -29,6 +30,7 @@ int main(void)
         }
         printf("\n");
     }
+    return 0;
 }
 
 void print_bulb(int bit)
