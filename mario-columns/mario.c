@@ -1,16 +1,19 @@
 // Import C libraries
-#include <cs50.h>
 #include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
 
 int main(void)
 {
     int n;
-
+    char size[1];
     // Valid input should be a number between 1 and 8
     // Keep asking for input until valid value is inserted
     do
     {
-        n = get_int("Height: ");
+        printf("Block size: ");
+        fscanf (stdin, "%s", size);
+        n = atoi(size);
     }
     while (n < 1 || n > 8);
 

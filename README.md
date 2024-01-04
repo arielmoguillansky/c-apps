@@ -1,4 +1,14 @@
-A series of console apps made in C to learn the language and basic concepts of how a program and a computer work.
+A series of console programs made in C to learn the language and main programming concepts and techniques.
+
+### How to execute
+
+1. #### Compile
+
+- Compile the .c file by executing `gcc -o <file>.c`
+
+2. #### Run program
+
+- Run the compiled program by executing `./<program>`
 
 ### List of programs
 
