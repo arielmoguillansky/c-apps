@@ -1,6 +1,6 @@
 // Import C libraries
-#include <cs50.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 // Call methods
 int get_first(long n);
@@ -21,7 +21,9 @@ int valid_len(long n)
 
 int main(void)
 {
-    long n = get_long("Number: ");
+    long n;
+    printf("Number: ");
+    scanf("%ld", &n);
     long first = get_first(n);
 
     // Check if first digit in input returns 4 from the first method, then is VISA card

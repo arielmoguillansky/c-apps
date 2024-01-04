@@ -4,7 +4,7 @@ A series of console programs made in C to learn the language and main programmin
 
 1. #### Compile
 
-- Compile the .c file by executing `gcc -o <file>.c`
+- Compile the .c file by executing `gcc -o <output> <file>.c`
 
 2. #### Run program
 

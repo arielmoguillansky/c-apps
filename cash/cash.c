@@ -1,5 +1,4 @@
 // Import C libraries
-#include <cs50.h>
 #include <stdio.h>
 
 int get_cents(void);
@@ -32,8 +31,15 @@ int main(void)
     // Sum coins
     int coins = quarters + dimes + nickels + pennies;
 
+    // Print number of coins for each type to give the customer
+    printf("Quarters: %i\n", quarters);
+    printf("Dimes: %i\n", dimes);
+    printf("Nickels: %i\n", nickels);
+    printf("Pennies: %i\n", pennies);
+
     // Print total number of coins to give the customer
-    printf("%i\n", coins);
+    printf("----------------------\n");
+    printf("Total coins: %i\n", coins);
 }
 
 int get_cents(void)
@@ -41,7 +47,9 @@ int get_cents(void)
     int n;
     do
     {
-        n = get_int("Cents owed: ");
+
+        printf("Cents owed: ");
+        scanf("%d", &n);
     }
     while (n < 0);
     return n;
